@@ -7,7 +7,7 @@
 
 
 *.log
-*.fis
+*.fls
 *.aux
 *.fdb_latexmk
 *.gz

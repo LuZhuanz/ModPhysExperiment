@@ -55,10 +55,65 @@ Michael Farady 首先在 1845 年发现磁光现象，他发现通过玻璃样�
 角度，这个小角度称为克尔旋转角$\varPhi '$,因此反射光当中必然会掺杂进去S光的成
 分。同时，由于介质对这两种模式的吸收率也不同，从而改变出射光的椭偏率$\varPhi ''$。
 由于克尔旋转角$\varPhi '$和克尔椭偏率$\varPhi ''$都是磁化强度$M$的函
-数。通过探测克尔旋转角或椭偏率的变化可以推测出磁化强度$M$的变化。
-
+数。通过探测克尔旋转角或椭偏率的变化可以推测出磁化强度$M$的变化。 \\
+为了获取克尔旋转角$\varPhi '$和克尔椭偏率$\varPhi ''$，我们将两个偏振片在消光角度上
+偏离一个小角度$\delta$。这样，光电探头所测到的光强为
+\begin{equation}
+    I=\left\lvert E_p \sin \delta +E_s\cos \delta \right\rvert ^2 \approx \left\lvert E_p \delta +E_s \right\rvert ^2 
+\end{equation}
+而 $E_s /E_P = \varPhi ' +i \varPhi ''$,给出Kerr 转角$\varPhi '$和克尔椭偏率$\varPhi ''$,于是有
+\begin{equation}
+    I = \left\lvert E_p \right\rvert ^2\left\lvert \delta + \varPhi ' +i \varPhi '' \right\rvert ^2 
+    \approx  \left\lvert E_p \right\rvert ^2 (\delta ^2 + 2\delta \varPhi ')=I_0(1+\frac{2\varPhi '}{\delta})
+\end{equation}
+在这里， $I_0=\left\lvert E_p \right\rvert ^2 \delta ^2$, 表示克尔旋转角为零的时候的光强，由于 $\varPhi '$
+和 $\varPhi ''$都随着和磁化强度的变化呈线性的变化，所测到的光强随H的变化而变化，表现为
+一个磁滞回线的形式。可以通过翻转大于或等于饱和场的磁场得到Kerr 光强的
+变化，从而可以得到Kerr转角的饱和值： $\varPhi_m ' = \frac{\delta}{4} \frac{\Delta I}{I_0}$ . \\
+磁性薄膜中的磁化强度往往沿着特殊的方向（易磁化轴）自发磁化，如垂直
+于膜面或平行于膜面。因此，在实验中通常采取三种简单的构型来测量Kerr信号，
+即所谓的纵向克尔效应，横向克尔效应和极向克尔效应。这三种构型是按照光路
+与磁化强度相对位置来区分的。$\overrightarrow{M}$位于膜面内，但是垂直于光路的，是横向Kerr效应
+（transversal SMOKE）， $\overrightarrow{M}$ 垂直于膜面的是极向Kerr效应（polar SMOKE）。极向
+Kerr效应最强，纵向Kerr效应要弱很多，横向Kerr效应在一阶近似下没有Kerr转
+角和椭偏率，但是以P光（偏振方向平行于入射面）入射的反射光的光强会发生
+改变。
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{fig/fig1.png}
+    \caption{磁光克尔效应的三种构型}\label{fig2}
+\end{figure}
 \section{实验内容}
+实际实验装置由以下几部分组成：振动隔绝系统（光学平台）；磁场（可调电流
+源、电磁铁）；光路（激光器、起偏器、检偏器、光学调节原件；光电探测器、
+光电放大器、万用表）；样品座。利用电脑直接控制电磁铁的励磁电流，并同步
+读取万用表测量得到的光电压。
 
+\begin{enumerate}
+    \item 根据实验需求搭建相对应的光路。
+    \item 将二极管激光器控制器安全锁打开，打开电源，将激光强度控制(LD ON)
+    和温度控制(TEC ON)都按下，进入工作工作状态。通过调节Optical Power 
+    Setpoint来实现激光强度的调节（配合使用设备上Modify键和右侧黑色旋
+    钮）。注意，切勿直视激光。
+    \item 将光电探测器电源打开（power调至1位置）
+    \item 打开光电放大器电源，将显示档调节只光电流选项（$I_{PD}$），将量程调制
+    mA（Range）。
+    \item 打开万用电表。
+    \item 打开磁铁电流源（背后红色按钮），并长按前面板Power键，使其进入工
+    作状态。
+    \item 放置样品，调节样品位置、角度至合适，使得激光光斑能够进入光电探
+    测器。注意调节光电放大器量程。
+    \item 转动rotary support，调节检偏器偏振方向，使到消光位置，记下极小值
+    $I_min$ 。继续旋转，使检偏器离开消光位置数圈，并记下旋转的角度
+    （根据实际情况可以适当改变旋转的角度）。rotary support在刻度位于
+    标尺中间时，旋转每圈实际走的角度是1.193°。注意调节光电放大器量
+    程 （一般在μA档信噪比较好）。  
+    \item 打开控制软件，设置磁铁的电流扫描范围，步长等信息，运行测试并保
+    存数据。
+    \item 测试完成后，关闭激光强度控制(LD)和温度控制(TEC)，关闭激光器控
+    制器电源；关闭光电探测器，光电放大器，万用表，电磁铁电源，电
+    脑。    
+\end{enumerate}
 \section{实验数据}
 
 \section{误差分析}
