@@ -4,11 +4,13 @@
 !*.tex
 !*.pdf
 !*.bib
-.log
-.fis
-.aux
-.fdb_latexmk
-.gz
+
+
+*.log
+*.fis
+*.aux
+*.fdb_latexmk
+*.gz
 
 #data folder
 data/
